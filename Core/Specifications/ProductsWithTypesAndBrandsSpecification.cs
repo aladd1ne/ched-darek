@@ -1,15 +1,17 @@
+using System;
+using System.Linq.Expressions;
 using Core.Entities;
 
 namespace Core.Specifications
 {
     public class ProductsWithTypesAndBrandsSpecification : BaseSpecification<Product>
     {
-        public ProductsWithTypesAndBrandsSpecification(ProductSpecParams productParams)
-         : base(x =>
-         (!string.IsNullOrEmpty(productParams.Search) || x.Name.ToLower().Contains(productParams.Search)) &&
-             (!productParams.BrandId.HasValue || x.ProductBrandId == productParams.BrandId) &&
-             (!productParams.TypeId.HasValue || x.ProductTypeId == productParams.TypeId)
-        )
+        public ProductsWithTypesAndBrandsSpecification(ProductSpecParams productParams) 
+            : base(x => 
+                (string.IsNullOrEmpty(productParams.Search) || x.Name.ToLower().Contains(productParams.Search)) &&
+                (!productParams.BrandId.HasValue || x.ProductBrandId == productParams.BrandId) &&
+                (!productParams.TypeId.HasValue || x.ProductTypeId == productParams.TypeId)
+            )
         {
             AddIclude(x => x.ProductType);
             AddIclude(x => x.ProductBrand);
@@ -23,11 +25,9 @@ namespace Core.Specifications
                     case "priceAsc":
                         AddOrderBy(p => p.Price);
                         break;
-
                     case "priceDesc":
                         AddOrderByDescending(p => p.Price);
                         break;
-
                     default:
                         AddOrderBy(n => n.Name);
                         break;
@@ -35,14 +35,11 @@ namespace Core.Specifications
             }
         }
 
-
-        public ProductsWithTypesAndBrandsSpecification(int id) : base(x => x.ID == id)
+        public ProductsWithTypesAndBrandsSpecification(int id) 
+            : base(x => x.ID == id)
         {
-
             AddIclude(x => x.ProductType);
             AddIclude(x => x.ProductBrand);
-
         }
     }
-
 }
