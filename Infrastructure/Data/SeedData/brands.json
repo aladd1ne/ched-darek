@@ -1,26 +1,36 @@
 [
   {
     "Id": 1,
-    "Name": "Angular"
+    "Name": "Légumes feuilles"
   },
   {
     "Id": 2,
-    "Name": "NetCore"
+    "Name": "Légumes fleurs"
   },
   {
     "Id": 3,
-    "Name": "VS"
+    "Name": "Légumes fruits"
   },
   {
     "Id": 4,
-    "Name": "React"
+    "Name": "Légumes tubercules"
   },
   {
     "Id": 5,
-    "Name": "Typescript"
+    "Name": "Fruits à noyau"
   },
   {
     "Id": 6,
-    "Name": "Redis"
+    "Name": "Fruits à pépin"
+  },
+
+  {
+    "Id": 7,
+    "Name": "Fruits à coque"
+  },
+
+  {
+    "Id": 8,
+    "Name": "Baies et fruits rouges"
   }
 ]
