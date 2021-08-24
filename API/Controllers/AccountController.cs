@@ -49,24 +49,24 @@ namespace API.Controllers
         }
         [Authorize]
         [HttpGet("address")]
-        public async Task<ActionResult<AdressDto>> GetUserAddress()
+        public async Task<ActionResult<AddressDto>> GetUserAddress()
         {
 
             var user = await _userManager.FindUserByClaimsPrincipleWithAddressAsync(User);
 
-            return _mapper.Map<Address, AdressDto>(user.Adress);
+            return _mapper.Map<Address, AddressDto>(user.Adress);
         }
         [Authorize]
         [HttpPut("address")]
-           public async Task<ActionResult<AdressDto>> UpdateUserAddress(AdressDto adress)
+           public async Task<ActionResult<AddressDto>> UpdateUserAddress(AddressDto adress)
            { 
                var user = await _userManager.FindUserByClaimsPrincipleWithAddressAsync(User);
 
-               user.Adress = _mapper.Map<AdressDto,Address>(adress);
+               user.Adress = _mapper.Map<AddressDto,Address>(adress);
 
                var result = await _userManager.UpdateAsync(user);
 
-               if (result.Succeeded) return Ok(_mapper.Map<Address,AdressDto>(user.Adress));
+               if (result.Succeeded) return Ok(_mapper.Map<Address,AddressDto>(user.Adress));
 
                return BadRequest("Problem updating the user");
                {
