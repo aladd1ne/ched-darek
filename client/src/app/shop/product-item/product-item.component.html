@@ -1,4 +1,4 @@
-<div class="card h-100 shadow-sm">
+<!-- <div class="card h-100 shadow-sm">
 
     <div class="image position-relative" style="cursor: pointer;">
         <img src="{{product.pictureUrl}}" alt="{{product.name}}" class="img-fluid bg-info">
@@ -20,4 +20,27 @@
 
 
     </div>
-</div>
+</div> -->
+
+<div class="product-card">
+    <div class="product-card__image">
+        <img src="{{product.pictureUrl}}" alt="{{product.name}}">
+        <div class="product-card__image-content">
+            <a class="icn " routerLink="/shop/{{product.id}}" ><i class="organik-icon-visibility"></i></a>
+            <a class="icn" (click)="addItemToBasket()"><i class="organik-icon-shopping-cart" style="cursor: pointer;"></i></a>
+        </div><!-- /.product-card__image-content -->
+    </div><!-- /.product-card__image -->
+    <div class="product-card__content">
+        <div class="product-card__left">
+            <h3><a href="product-details.html">{{product.name}}</a></h3>
+            <p>{{product.price}} <span>TND</span></p>
+        </div><!-- /.product-card__left -->
+        <div class="product-card__right">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+        </div><!-- /.product-card__right -->
+    </div><!-- /.product-card__content -->
+</div><!-- /.product-card -->

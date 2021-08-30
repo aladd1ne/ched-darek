@@ -1,31 +1,101 @@
-<div class="container mt-5">
+<!-- <div class="container mt-5">
 
-    <div class="row" *ngIf="product">
-        <div class="col-6">
-            <img src="{{product.pictureUrl}}" alt="{{product.pictureUrl}}" class="img-fluid w-100">
+    <div class="row " *ngIf="product">
+        <div class="col-6  ">
+            <img src="{{product.pictureUrl}}" alt="{{product.pictureUrl}}" class="img-fluid w-60">
         </div>
 
         <div class="col-6">
-            <h3>{{product.name}}</h3>
-            <p>{{product.price |currency}}</p>
+            <h3 class="item-name">{{product.name}}</h3>
+            <hr>
+            <p class="item-price">{{product.price}}<span style="font-size: 14px;">,TND</span></p>
+            <hr>
+
+
+            <p class="item-desc">{{product.description}}</p>
+
+            <p style="padding-bottom: 10px;">Disponible en magasin</p>
+
 
             <div class="d-flex justify-content-start align-items-center">
-                <i (click)="decrementQuantity()" class="fa fa-minus-circle text-warning mr-2" style="cursor: pointer; font-size: 2em;"></i>
-                <span class="font-weight-bold" style="font-size: 1.5em;">{{quantity}}</span>
-                <i (click)="incrementQuantity()" class="fa fa-plus-circle text-warning mx-2" style="cursor: pointer; font-size: 2em;"></i>
+                <div class="quantity-box">
+                    <button (click)="decrementQuantity()" type="button" class="sub">-</button>
+                    <input type="number" id="2" value="{{quantity}}">
+                    <button (click)="incrementQuantity()" type="button" class="add">+</button>
+                </div>
 
-                <button (click)="addItemToBasket()" class="btn btn-outline-primary btn-lg ml-4"> Add to cart</button>
+                <button (click)="addItemToBasket()" class="add-btn ml-4">Ajouter au panier</button>
+            </div>
+
+           <p style="padding-top: 30px;"> <strong>Categories: </strong>{{product.productBrand}}</p>
+        </div>
+
+
+    </div>
+
+
+
+</div> -->
+
+<section class="product_detail">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6 col-lg-6">
+                <div class="product_detail_image">
+                    <img src="{{product.pictureUrl}}" alt="{{product.name}}">
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-6">
+                <div class="product_detail_content">
+                    <h2>{{product.name}}</h2>
+                    <div class="product_detail_review_box">
+                        <div class="product_detail_price_box">
+                            <p>{{product.price}} <span>,TND</span></p>
+                        </div>
+                        <div class="product_detail_review">
+                            <a href="#"><i class="fa fa-star"></i></a>
+                            <a href="#"><i class="fa fa-star"></i></a>
+                            <a href="#"><i class="fa fa-star"></i></a>
+                            <a href="#"><i class="fa fa-star"></i></a>
+                            <a href="#" class="deactive"><i class="fa fa-star"></i></a>
+                         
+                        </div>
+                    </div>
+                    <div class="product_detail_text">
+                        <p>{{product.description}}</p>
+                    </div>
+                    <ul class="list-unstyled product_detail_address">
+                        <li>REF. {{product.name}}/{{product.id}}</li>
+                        <li>Disponible en magasin</li>
+                    </ul>
+                    <div class="product-quantity-box">
+                        <div class="quantity-box">
+                            <button (click)="decrementQuantity()" type="button" class="sub">-</button>
+                            <input type="number" id="2" value="{{quantity}}" />
+                            <button (click)="incrementQuantity()" type="button" class="add">+</button>
+                        </div>
+                        <div class="addto-cart-box">
+                            <button (click)="addItemToBasket()"  class="thm-btn" type="submit">Ajouter au panier</button>
+                        </div>
+                     
+                    </div>
+                    <ul class="list-unstyled category_tag_list">
+                        <li><span>Category:</span> {{product.productType}}</li>
+                        <li><span>Tags:</span> {{product.productBrand}}</li>
+                    </ul>
+                    <div class="product_detail_share_box">
+                        <div class="share_box_title">
+                            <h2>Share with friends</h2>
+                        </div>
+                        <div class="share_box_social">
+                            <a href="#"><i class="fab fa-facebook-square"></i></a>
+                          
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-
-
+     
     </div>
-
-    <div class="row mt-5">
-        <div class="col-12 ml-3">
-            <h4>Description</h4>
-            <p>{{product.description}}</p>
-        </div>
-    </div>
-
-</div>
+</section>

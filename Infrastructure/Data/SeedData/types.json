@@ -6,6 +6,14 @@
   {
     "Id": 2,
     "Name": "Fruits"
+  },
+
+  {
+    "Id": 3,
+    "Name": "Fruits et légumes"
   }
+
+
+  
 
 ]

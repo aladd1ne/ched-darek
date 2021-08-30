@@ -27,9 +27,9 @@ export class BasketComponent implements OnInit {
     this.basketService.incrementItemQuantity(item);
   }
 
-  deccrementItemQuantity(item: IBasketItem)
+  decrementItemQuantity(item: IBasketItem)
   {
-    this.basketService.deccrementItemQuantity(item);
+    this.basketService.decrementItemQuantity(item);
   }
 
 }

@@ -1,36 +1,33 @@
 [
   {
     "Id": 1,
-    "Name": "Légumes feuilles"
+    "Name": "Légumes de saison"
   },
   {
     "Id": 2,
-    "Name": "Légumes fleurs"
+    "Name": "Herbes aromatiques"
   },
   {
     "Id": 3,
-    "Name": "Légumes fruits"
+    "Name": "Légumes d'ailleurs"
   },
   {
     "Id": 4,
-    "Name": "Légumes tubercules"
+    "Name": "Fruits de saison"
   },
   {
     "Id": 5,
-    "Name": "Fruits à noyau"
+    "Name": "Fruits d'ailleurs"
   },
   {
     "Id": 6,
-    "Name": "Fruits à pépin"
+    "Name": "Agrumes"
   },
 
   {
     "Id": 7,
-    "Name": "Fruits à coque"
-  },
-
-  {
-    "Id": 8,
-    "Name": "Baies et fruits rouges"
+    "Name": "Panier fruits et légumes"
   }
+
 ]
+

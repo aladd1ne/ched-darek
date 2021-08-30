@@ -39,14 +39,14 @@ namespace Infrastructure.services
 
             //get delivery method from repo
 
-            var deliverMethod = await _unitOfWork.Repository<DeliveryMethod>().GetByIdAsync(deliveryMethodId);
+            var deliveryMethod = await _unitOfWork.Repository<DeliveryMethod>().GetByIdAsync(deliveryMethodId);
 
             // calc subtotal
 
             var subtotal = items.Sum(item => item.Price * item.Quantity);
 
             //create order
-            var order = new Order(items, buyerEmail, shippingAddress, deliverMethod, subtotal);
+            var order = new Order(items, buyerEmail, shippingAddress, deliveryMethod, subtotal);
             _unitOfWork.Repository<Order>().Add(order);
 
             //TODO: save to db

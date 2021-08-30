@@ -1,12 +1,14 @@
+  
 using System.Collections.Generic;
-using System.Linq;
-using System.Security.Claims;
 using System.Threading.Tasks;
 using API.Dtos;
 using API.Errors;
+using API.Extensions;
 using AutoMapper;
 using Core.Entities.OrderAggregate;
 using Core.interfaces;
+
+using Core.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -44,7 +46,8 @@ namespace API.Controllers
 
             var orders = await _orderSevice.GetOrdersForUserAsync(email);
 
-            return Ok(_mapper.Map<IReadOnlyList<Order>, IReadOnlyList<OrderToReturnDto>>(orders));
+            return Ok(_mapper.Map<IReadOnlyList<Order>,IReadOnlyList<OrderToReturnDto>>(orders));
+            // return Ok(orders);
         }
 
         [HttpGet("{id}")]
@@ -57,6 +60,7 @@ namespace API.Controllers
             if (order == null) return NotFound(new ApiResponse(404));
 
             return _mapper.Map<Order, OrderToReturnDto>(order);
+            
 
         }
 

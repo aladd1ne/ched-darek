@@ -1,0 +1,93 @@
+ .item-name{
+    font-size: 34px;
+    font-weight: bold;
+ }
+
+ .item-price{
+     font-size: 24px;
+     font-family: Arial, Helvetica, sans-serif;
+     padding-top: 1rem;
+     padding-bottom: 1rem;
+ }
+
+ .item-desc{
+    padding-top: 1rem;
+    padding-bottom: 5px;
+ }
+
+ .add-btn{
+     border: none;
+     background: #11998e;  /* fallback for old browsers */
+     background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  
+     background: linear-gradient(to right, #38ef7d, #11998e);  
+     padding: 1rem;
+     color: white;
+     font-weight: bold;
+
+     &:hover {
+        background: #11998e;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right,#11998e #38ef7d );  
+        background: linear-gradient(to right,#11998e #38ef7d );  
+     }
+
+ }
+
+ .quantity-box {
+    width: 100px;
+    height: 58px;
+    border: 2px solid #f4f4f4;
+    position: relative;
+  }
+  
+  .quantity-box input[type="number"] {
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 58px;
+    padding-left: 30px;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 16px;
+    color: var(--thm-color);
+  }
+  
+  @media (min-width: 1200px) {
+    .quantity-box input[type="number"] {
+      font-size: 18px;
+    }
+  }
+  
+  .quantity-box input[type="number"]::-webkit-inner-spin-button,
+  .quantity-box input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  .quantity-box input[type="number"] {
+    -moz-appearance: textfield;
+  }
+  
+  .quantity-box button {
+    width: 31px;
+    height: 29px;
+    border: none;
+    border: 2px solid #f4f4f4;
+    border-right: 0;
+    border-top: 0;
+    outline: none !important;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    color: #383a39;
+  }
+  
+  .quantity-box button.add {
+    top: auto;
+    bottom: 0;
+    border-top: 2px solid #f4f4f4;
+    border-bottom: 0;
+  }

@@ -1,18 +1,331 @@
-<carousel>
+<div class="page-wrapper">
+ 
+    
+ 
+  <header>
 
-    <slide>
-        <img src="assets/images/hero1.jpg" alt="first slide" style="display: block; width: 100%;">
-    </slide>
-    <slide>
-        <img src="assets/images/hero2.jpg" alt="first slide" style="display: block; width: 100%;">
-    </slide>
-    <slide>
-        <img src="assets/images/hero3.jpg" alt="first slide" style="display: block; width: 100%;">
-    </slide>
-    </carousel>
-
-    <section class="fetured">
-        <div class="d-flex justify-content-center pt-4">
-            <h1>Welcome to the shop</h1>
+    <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
+    <div class="overlay"></div>
+  
+    <!-- The HTML5 video element that will create the background video on the header -->
+    <video class="video-fluid" autoplay loop muted>
+      <source src="assets/video-bg.mp4" type="video/mp4">
+    </video>
+  
+    <!-- The header content -->
+    <div class="container h-100">
+      <div class="d-flex h-100 text-center align-items-center">
+        <div class="w-100 text-white">
+          <h1 class="display-3">bienvenue à ched darek</h1>
+          <p class="lead mb-0">Votre marché en ligne livré à domicile</p>
         </div>
-    </section>
+      </div>
+    </div>
+  </header>
+  <section class="feature-box">
+      <div class="container">
+          <div class="inner-container wow fadeInUp" data-wow-duration="1500ms">
+              <div class="thm-tiny__slider" id="contact-infos-box" data-tiny-options='{
+      "container": "#contact-infos-box",
+      "items": 1,
+      "slideBy": "page",
+      "gutter": 0,
+      "mouseDrag": true,
+      "autoplay": true,
+      "nav": false,
+      "controlsPosition": "bottom",
+      "controlsText": ["<i class=\"fa fa-angle-left\"></i>", "<i class=\"fa fa-angle-right\"></i>"],
+      "autoplayButtonOutput": false,
+      "responsive": {
+          "640": {
+            "items": 2,
+            "gutter": 30
+          },
+          "992": {
+            "gutter": 30,
+            "items": 3
+          },
+          "1200": {
+            "disable": true
+          }
+        }
+  }'>
+                  <div>
+                      <div class="feature-box__single" >
+                          <i class="organik-icon-global-shipping feature-box__icon"></i>
+                          <div class="feature-box__content">
+                              <h3>Return Policy</h3>
+                              <p>Money back guarantee</p>
+                          </div><!-- /.feature-box__content -->
+                      </div><!-- /.feature-box__single -->
+                  </div>
+                  <div>
+                      <div class="feature-box__single">
+                          <i class="organik-icon-delivery-truck feature-box__icon"></i>
+                          <div class="feature-box__content">
+                              <h3>Free Shipping</h3>
+                              <p>On all orders over $25.00</p>
+                          </div><!-- /.feature-box__content -->
+                      </div><!-- /.feature-box__single -->
+                  </div>
+                  <div>
+                      <div class="feature-box__single">
+                          <i class="organik-icon-online-store feature-box__icon"></i>
+                          <div class="feature-box__content">
+                              <h3>Store Locator</h3>
+                              <p>Find your nearest store</p>
+                          </div><!-- /.feature-box__content -->
+                      </div><!-- /.feature-box__single -->
+                  </div>
+              </div>
+          </div><!-- /.inner-container -->
+      </div><!-- /.container -->
+  </section><!-- /.feature-box -->
+
+ 
+  <section class="offer-banner" >
+      <div class="container">
+          <div class="row">
+              <div class="col-md-6 wow fadeInLeft" data-wow-duration="1500ms" data-wow-delay="0ms" data-aos="flip-left">
+                  <div class="offer-banner__box" style="background-image: url(assets/images/resources/offer-banner-1-1.jpg);">
+                      <div class="offer-banner__content">
+                          <h3><span>100%</span> <br>Organic</h3>
+                          <p  >Quality Organic Food Store</p>
+                          <a href="shop" class="thm-btn">Order Now</a><!-- /.thm-btn -->
+                      </div><!-- /.offer-banner__content -->
+                  </div><!-- /.offer-banner__box -->
+              </div><!-- /.col-md-6 -->
+              <div class="col-md-6 wow fadeInRight" data-wow-duration="1500ms" data-wow-delay="100ms" data-aos="flip-right">
+                  <div class="offer-banner__box" style="background-image: url(assets/images/resources/offer-banner-1-2.jpg);">
+                      <div class="offer-banner__content">
+                          <h3><span>100%</span> <br>Organic</h3>
+                          <p>Quality Organic Food Store</p>
+                          <a href="shop" class="thm-btn">Order Now</a><!-- /.thm-btn -->
+                      </div><!-- /.offer-banner__content -->
+                  </div><!-- /.offer-banner__box -->
+              </div><!-- /.col-md-6 -->
+          </div><!-- /.row -->
+      </div><!-- /.container -->
+  </section><!-- /.offer-banner -->
+
+  <section class="funfact-one jarallax" data-jarallax data-speed="0.3" data-imgPosition="50% 50%">
+      <img src="assets/images/backgrounds/funfact-bg-1-1.jpg" class="jarallax-img" alt="">
+      <div class="container">
+          <div class="row no-gutters">
+              <div class="col-md-6 col-lg-4  wow fadeInLeft" data-wow-duration="1500ms" data-wow-delay="0ms">
+                  <div class="funfact-one__single">
+                      <h3 class="odometer" data-count="8080" data-aos="fade-down-right">80</h3>
+                      <p>Organic Products Available</p>
+                  </div><!-- /.funfact-one__single -->
+              </div><!-- /.col-md-6 col-lg-3 -->
+          
+              <div class="col-md-6 col-lg-4  wow fadeInLeft" data-wow-duration="1500ms" data-wow-delay="200ms">
+                  <div class="funfact-one__single">
+                      <h3 class="odometer" data-count="440" data-aos="fade-down-left">04</h3>
+                      <p>Expert Team Mebers</p>
+                  </div><!-- /.funfact-one__single -->
+              </div><!-- /.col-md-6 col-lg-3 -->
+              <div class="col-md-6 col-lg-4  wow fadeInLeft" data-wow-duration="1500ms" data-wow-delay="300ms">
+                  <div class="funfact-one__single">
+                      <h3 class="odometer" data-count="2870" data-aos="fade-down-left">120</h3>
+                      <p>Satisfied Customers</p>
+                  </div><!-- /.funfact-one__single -->
+              </div><!-- /.col-md-6 col-lg-3 -->
+          </div><!-- /.row -->
+      </div><!-- /.container -->
+  </section><!-- /.funfact-one -->
+
+  <section class="call-to-action">
+      <img src="assets/images/shapes/call-shape-1.png" alt="" class="call-to-action__shape-1">
+      <img src="assets/images/shapes/call-shape-2.png" alt="" class="call-to-action__shape-2 wow fadeInLeft" data-wow-duration="1500ms">
+      <h2 class="floated-text">Oragnic</h2><!-- /.floated-text -->
+      <div class="container">
+          <div class="row">
+              <div class="col-md-12 col-lg-12 col-xl-6 clearfix">
+                  <img src="assets/images/resources/call-1-1.jpg" class="call-to-action__image" alt="">
+              </div><!-- /.col-md-12 col-lg-12 col-xl-12 -->
+              <div class="col-md-12 col-lg-12 col-xl-6 clearfix">
+                  <div class="call-to-action__content">
+                      <div class="block-title text-left">
+                          <div class="block-title__decor" style="background-image: url(assets/images/shapes/leaf-2-1.png);"></div>
+                          <!-- /.block-title__decor -->
+                          <p data-aos="zoom-in">Shopping Store</p>
+                          <h3 data-aos="zoom-in">Organic Food Only</h3>
+                      </div><!-- /.block-title -->
+                      <p data-aos="zoom-in-left">There are many variations of passages of lorem ipsum available but the majority have suffered
+                          alteration in some form by injected humor or random word.</p>
+                      <div class="call-to-action__wrap">
+                          <div class="row no-gutters">
+                              <div class="col-md-6">
+                                  <div class="call-to-action__box">
+                                      <i class="organik-icon-farmer"></i>
+                                      <h3 data-aos="zoom-in-right">Professional
+                                          Farmers</h3>
+                                  </div><!-- /.call-to-action__box -->
+                              </div><!-- /.col-md-6 -->
+                              <div class="col-md-6">
+                                  <div class="call-to-action__box">
+                                      <i class="organik-icon-farm"></i>
+                                      <h3 data-aos="zoom-in-right">Solution
+                                          for Farming</h3>
+                                  </div><!-- /.call-to-action__box -->
+                              </div><!-- /.col-md-6 -->
+                          </div><!-- /.row -->
+                      </div><!-- /.call-to-action__wrap -->
+                      <a href="shop" class="thm-btn" data-aos="zoom-out-up" style="cursor: pointer;">Order Now</a><!-- /.thm-btn -->
+                  </div><!-- /.call-to-action__content -->
+              </div><!-- /.col-md-12 col-lg-12 col-xl-12 -->
+          </div><!-- /.row -->
+      </div><!-- /.container -->
+  </section><!-- /.call-to-action -->
+
+  <div class="client-carousel ">
+      <div class="container">
+     
+      </div><!-- /.container -->
+  </div><!-- /.client-carousel -->
+
+  <section class="call-to-action-two">
+      <img src="assets/images/shapes/call-shape-2-1.png" alt="" class="call-to-action-two__shape-1">
+      <img src="assets/images/shapes/call-shape-2-2.png" alt="" class="call-to-action-two__shape-2">
+      <img src="assets/images/shapes/call-shape-2-3.png" alt="" class="call-to-action-two__shape-3">
+      <img src="assets/images/shapes/call-shape-2-4.png" alt="" class="call-to-action-two__shape-4">
+      <img src="assets/images/shapes/call-shape-2-5.png" alt="" class="call-to-action-two__shape-5">
+      <img src="assets/images/shapes/call-shape-2-6.png" alt="" class="call-to-action-two__shape-6">
+      <div class="container">
+          <div class="row flex-xl-row-reverse">
+              <div class="col-lg-12 col-xl-6">
+                  <div class="call-to-action-two__image">
+                      <h2 class="floated-text">Healthy</h2><!-- /.floated-text -->
+                      <img src="assets/images/resources/call-2-1.png" alt="">
+                  </div><!-- /.call-to-action-two__image -->
+              </div><!-- /.col-md-6 -->
+              <div class="col-lg-12 col-xl-6">
+                  <div class="call-to-action-two__content">
+                      <div class="block-title text-left">
+                          <div class="block-title__decor"></div><!-- /.block-title__decor -->
+                          <p data-aos="fade-right">Pure Organic Products</p>
+                          <h3 data-aos="fade-left">Everyday Fresh Food</h3>
+                      </div><!-- /.block-title -->
+                      <div class="row">
+                          <div class="col-md-6">
+                              <h4 data-aos="fade-up-right">Duis aute irure dolor in reprehen in derit.</h4>
+                              <p data-aos="fade-up-left">Voluptate velit essects quis tempor orci. Suspendisse that potenti faucibus.</p>
+                          </div><!-- /.col-md-6 -->
+                          <div class="col-md-6">
+                              <ul class="list-unstyled">
+                                  <li data-aos="fade-down-right">
+                                      <i class="far fa-check-circle"></i>
+                                      Refresing to get such a touch
+                                  </li>
+                                  <li data-aos="fade-down-left">
+                                      <i class="far fa-check-circle"></i>
+                                      Duis aute irure dolor in
+                                  </li>
+                                  <li data-aos="fade-up-left">
+                                      <i class="far fa-check-circle"></i>
+                                      Reprehenderit in voluptate
+                                  </li>
+                                  <li data-aos="fade-up-right">
+                                      <i class="far fa-check-circle"></i>
+                                      Velit esse cillum dolore eu
+                                  </li>
+                                  <li data-aos="fade-left">
+                                      <i class="far fa-check-circle"></i>
+                                      Fugiat nulla pariatur
+                                  </li>
+                              </ul><!-- /.list-unstyled -->
+                          </div><!-- /.col-md-6 -->
+                      </div><!-- /.row -->
+                      <a  href="shop" class="thm-btn" data-aos="zoom-in-up" style="cursor: pointer;">Order Now</a><!-- /.thm-btn -->
+                  </div><!-- /.call-to-action-two__content -->
+              </div><!-- /.col-md-6 -->
+
+          </div><!-- /.row -->
+      </div><!-- /.container -->
+  </section><!-- /.call-to-action-two -->
+
+  <section class="testimonials-one">
+      <div class="testimonials-one__head">
+          <div class="container">
+              <div class="block-title text-center">
+                  <div class="block-title__decor"></div><!-- /.block-title__decor -->
+                  <p>Our Testimonials</p>
+                  <h3 data-aos="zoom-out-up">What People Say?</h3>
+              </div><!-- /.block-title -->
+          </div><!-- /.container -->
+      </div><!-- /.testimonials-one__head -->
+      <div class="container">
+          <div class="thm-tiny__slider" id="testimonials-one-box" data-tiny-options='{
+      "container": "#testimonials-one-box",
+      "items": 1,
+      "slideBy": "page",
+      "gutter": 0,
+      "mouseDrag": true,
+      "autoplay": true,
+      "nav": false,
+      "controlsPosition": "bottom",
+      "controlsText": ["<i class=\"fa fa-angle-left\"></i>", "<i class=\"fa fa-angle-right\"></i>"],
+      "autoplayButtonOutput": false,
+      "responsive": {
+          "640": {
+            "items": 2,
+            "gutter": 30
+          },
+          "992": {
+            "gutter": 30,
+            "items": 3
+          },
+          "1200": {
+            "disable": true
+          }
+        }
+  }'>
+              <div>
+                  <div class="testimonials-one__single" data-aos="zoom-out-right">
+                      <div class="testimonials-one__image">
+                          <img src="assets/images/resources/testi-1-1.png" alt="">
+                      </div><!-- /.testimonials-one__image -->
+                      <div class="testimonials-one__content">
+                          <p>I was very impresed by the osfins service lorem ipsum is simply free text used by copy typing
+                              refreshing. Neque porro est qui dolorem ipsum.</p>
+                          <h3>Winnie Collier</h3>
+                          <span>Customer</span>
+                      </div><!-- /.testimonials-one__content -->
+                  </div><!-- /.testimonials-one__single -->
+              </div>
+              <div>
+                  <div class="testimonials-one__single" data-aos="zoom-out-left">
+                      <div class="testimonials-one__image">
+                          <img src="assets/images/resources/testi-1-2.png" alt="">
+                      </div><!-- /.testimonials-one__image -->
+                      <div class="testimonials-one__content">
+                          <p>I was very impresed by the osfins service lorem ipsum is simply free text used by copy typing
+                              refreshing. Neque porro est qui dolorem ipsum.</p>
+                          <h3>Helen Woods</h3>
+                          <span>Customer</span>
+                      </div><!-- /.testimonials-one__content -->
+                  </div><!-- /.testimonials-one__single -->
+              </div>
+              <div>
+                  <div class="testimonials-one__single" data-aos="zoom-out-up">
+                      <div class="testimonials-one__image">
+                          <img src="assets/images/resources/testi-1-3.png" alt="">
+                      </div><!-- /.testimonials-one__image -->
+                      <div class="testimonials-one__content">
+                          <p>I was very impresed by the osfins service lorem ipsum is simply free text used by copy typing
+                              refreshing. Neque porro est qui dolorem ipsum.</p>
+                          <h3>Ethan Thomas</h3>
+                          <span>Customer</span>
+                      </div><!-- /.testimonials-one__content -->
+                  </div><!-- /.testimonials-one__single -->
+              </div>
+          </div>
+      </div><!-- /.container -->
+  </section><!-- /.testimonials-one -->
+
+ 
+
+ 
+
+</div><!-- /.page-wrapper -->

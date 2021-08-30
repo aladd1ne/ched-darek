@@ -36,9 +36,55 @@
               "./node_modules/bootswatch/dist/Minty/bootstrap.min.css",
               "./node_modules/font-awesome/css/font-awesome.min.css",
               "./node_modules/ngx-toastr/toastr.css",
-              "src/styles.scss"
+              "./node_modules/jarallax/dist/jarallax.css",
+              "./node_modules/aos/dist/aos.css",
+               
+              "src/styles.scss",
+
+              
+              
+              "src/assets/vendors/bootstrap-select/bootstrap-select.min.css",
+              "src/assets/vendors/animate/animate.min.css",
+              "src/assets/vendors/fontawesome/css/all.min.css",
+          
+              "src/assets/vendors/organik-icon/organik-icons.css",
+              "src/assets/vendors/jquery-magnific-popup/jquery.magnific-popup.css",
+              "src/assets/vendors/nouislider/nouislider.min.css",
+              "src/assets/vendors/nouislider/nouislider.pips.css",
+              "src/assets/vendors/odometer/odometer.min.css",
+              "src/assets/vendors/swiper/swiper.min.css",
+              "src/assets/vendors/tiny-slider/tiny-slider.min.css",
+          
+             
+              "src/assets/css/organik.css"
+              
+              
+           
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/jquery/dist/jquery.min.js",
+              "./node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "src/assets/vendors/bootstrap/bootstrap.bundle.min.js",
+
+              "src/assets/vendors/bootstrap-select/bootstrap-select.min.js",
+              "src/assets/vendors/jarallax/jarallax.min.js",
+              "src/assets/vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js",
+              "src/assets/vendors/jquery-appear/jquery.appear.min.js",
+              "src/assets/vendors/jquery-circle-progress/jquery.circle-progress.min.js",
+              "src/assets/vendors/jquery-magnific-popup/jquery.magnific-popup.min.js",
+              "src/assets/vendors/jquery-validate/jquery.validate.min.js",
+              "src/assets/vendors/nouislider/nouislider.min.js",
+              "src/assets/vendors/odometer/odometer.min.js",
+              "src/assets/vendors/swiper/swiper.min.js",
+              "src/assets/vendors/tiny-slider/tiny-slider.min.js",
+              "src/assets/vendors/wnumb/wNumb.min.js",
+              "src/assets/vendors/wow/wow.js",
+              "src/assets/vendors/isotope/isotope.js",
+              "src/assets/vendors/countdown/countdown.min.js",
+
+              "src/assets/js/organik.js"
+              
+            ]
           },
           "configurations": {
             "production": {
