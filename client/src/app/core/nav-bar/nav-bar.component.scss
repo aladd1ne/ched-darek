@@ -1,18 +1,18 @@
  
 .cart-no{
     position: absolute;
-    min-height: 30px;
-    min-width: 30px;
+    min-height: 25px;
+    min-width: 25px;
     border-radius: 50%;
-    font-size: 1em;
-    background: #11998e;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-size: 0.8em;
+    font-weight: bold;
+    background: #60be74;
+
 
     color: white;
     text-align: center;
-    top: -12px;
-    right: 32px;
+    top: -15px;
+    right: 5px;
 }
 
 a{
@@ -32,14 +32,52 @@ a{
     }
 }
 
-.navbar{
-    background: #ECE9E6;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
-    
-    
+ 
+
+.login-btn{
+   border: solid;
+   border-width: 2px;
+   border-color: #60be74;
+    border-radius: 4px;
+    padding: 0px 10px 0px 10px;
+    color: #585858;
+    font-weight: 500;
+    margin-right: 5px;
+    transition: 0.3s;
+
+    &:hover{
+        background-color: #60be74;
+        color: white;
+    }
 }
+
+.sign-btn{
+    background-color: #60be74;
+     border-radius: 4px;
+     padding: 2px 15px 2px 15px;
+     color: white;
+     font-weight: 500;
+     margin-right: 5px;
+     transition: 0.3s;
+     
+     &:hover{
+        background-color: #60be74;
+        color: #585858; 
+    }
+  
+}
+
+@media screen and (max-width: 1000px) {
+    .navbar{
+        padding-top: 20px;
+        
+    }
+  }
+
+ 
+
+
+  
 
  
  

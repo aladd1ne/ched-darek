@@ -25,6 +25,7 @@ import { JwtInterceptor } from './core/interceptors/jwt.interceptors';
     BrowserAnimationsModule,
     HttpClientModule,
     CoreModule,
+    ShopModule,
     HomeModule,
     NgxSpinnerModule
   ],

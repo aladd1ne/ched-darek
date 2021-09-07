@@ -1,9 +1,9 @@
 [
   {
-    "Name": "Ail",
+    "Name": "Ail-ثوم",
     "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
     "Price": 1.2,
-    "PictureUrl": "images/img/products/Ail.jpg",
+    "PictureUrl": "images/products/Ail.jpg",
     "ProductTypeId": 1,
     "ProductBrandId": 1
   },
@@ -11,7 +11,7 @@
     "Name": "Artichaut",
     "Description": "Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.",
     "Price": 0.5,
-    "PictureUrl": "images/img/products/Artichaut.png",
+    "PictureUrl": "images/products/Artichaut.png",
     "ProductTypeId": 1,
     "ProductBrandId": 1
   },
@@ -19,7 +19,7 @@
     "Name": "Aubergine",
     "Description": "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
     "Price": 180,
-    "PictureUrl": "images/img/products/Aubergine.jpg",
+    "PictureUrl": "images/products/Aubergine.jpg",
     "ProductTypeId": 1,
     "ProductBrandId": 1
   },
@@ -27,7 +27,7 @@
     "Name": "Ciboulette",
     "Description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
     "Price": 300,
-    "PictureUrl": "images/img/products/Ciboulette.jpg",
+    "PictureUrl": "images/products/Ciboulette.jpg",
     "ProductTypeId": 1,
     "ProductBrandId": 2
   },
@@ -35,7 +35,7 @@
     "Name": "Basilic",
     "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
     "Price": 250,
-    "PictureUrl": "images/img/products/Basilic.jpg",
+    "PictureUrl": "images/products/Basilic.jpg",
     "ProductTypeId": 1,
     "ProductBrandId": 2
   },
@@ -43,7 +43,7 @@
     "Name": "Persil",
     "Description": "Aenean nec lorem. In porttitor. Donec laoreet nonummy augue.",
     "Price": 120,
-    "PictureUrl": "images/img/products/Persil.jpg",
+    "PictureUrl": "images/products/Persil.jpg",
     "ProductTypeId": 1,
     "ProductBrandId": 2
   },
@@ -51,7 +51,7 @@
     "Name": "Tomates",
     "Description": "Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
     "Price": 10,
-    "PictureUrl": "images/img/products/Tomates.jpg",
+    "PictureUrl": "images/products/Tomates.jpg",
     "ProductTypeId": 1,
     "ProductBrandId": 3
   },
@@ -59,7 +59,7 @@
     "Name": "Brocoli",
     "Description": "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
     "Price": 8,
-    "PictureUrl": "images/img/products/Brocoli.jpg",
+    "PictureUrl": "images/products/Brocoli.jpg",
     "ProductTypeId": 1,
     "ProductBrandId": 3
   },
@@ -67,7 +67,7 @@
     "Name": "Poivrons",
     "Description": "Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
     "Price": 15,
-    "PictureUrl": "images/img/products/Poivrons.jpg",
+    "PictureUrl": "images/products/Poivrons.jpg",
     "ProductTypeId": 1,
     "ProductBrandId": 3
   },
@@ -75,7 +75,7 @@
     "Name": "Abricot",
     "Description": "Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.",
     "Price": 18,
-    "PictureUrl": "images/img/products/Abricot.jpg",
+    "PictureUrl": "images/products/Abricot.jpg",
     "ProductTypeId": 2,
     "ProductBrandId": 4
   },
@@ -83,7 +83,7 @@
     "Name": "Airelle",
     "Description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
     "Price": 15,
-    "PictureUrl": "images/img/products/Airelle.jpg",
+    "PictureUrl": "images/products/Airelle.jpg",
     "ProductTypeId": 2,
     "ProductBrandId": 4
   },
@@ -91,7 +91,7 @@
     "Name": "Avocat",
     "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa.",
     "Price": 16,
-    "PictureUrl": "images/img/products/Avocat.jpg",
+    "PictureUrl": "images/products/Avocat.jpg",
     "ProductTypeId": 2,
     "ProductBrandId": 4
   },
@@ -99,7 +99,7 @@
     "Name": "Pêche plate à mûrir",
     "Description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
     "Price": 14,
-    "PictureUrl": "images/img/products/Pêche-plate.jpg",
+    "PictureUrl": "images/products/Pêche-plate.jpg",
     "ProductTypeId": 2,
     "ProductBrandId": 5
   },
@@ -107,7 +107,7 @@
     "Name": "Raisin",
     "Description": "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
     "Price": 250,
-    "PictureUrl": "images/img/products/Raisin.jpg",
+    "PictureUrl": "images/products/Raisin.jpg",
     "ProductTypeId": 2,
     "ProductBrandId": 5
   },
@@ -115,7 +115,7 @@
     "Name": "Kiwi vert",
     "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
     "Price": 189.99,
-    "PictureUrl": "images/img/products/boot-core2.png",
+    "PictureUrl": "images/products/boot-core2.png",
     "ProductTypeId": 2,
     "ProductBrandId": 5
   },
@@ -123,7 +123,7 @@
     "Name": "Citron jaune",
     "Description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
     "Price": 199.99,
-    "PictureUrl": "images/img/products/Citron-jaune.jpg",
+    "PictureUrl": "images/products/Citron-jaune.jpg",
     "ProductTypeId": 1,
     "ProductBrandId": 6
   },
@@ -131,7 +131,7 @@
     "Name": "Panier Saison",
     "Description": "Aenean nec lorem. In porttitor. Donec laoreet nonummy augue.",
     "Price": 150,
-    "PictureUrl": "images/img/products/Panier-Saison.jpg",
+    "PictureUrl": "images/products/Panier-Saison.jpg",
     "ProductTypeId": 3,
     "ProductBrandId": 7
   },
@@ -139,7 +139,7 @@
     "Name": "Panier Famille",
     "Description": "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
     "Price": 180,
-    "PictureUrl": "images/img/products/Panier-Famille.jpg",
+    "PictureUrl": "images/products/Panier-Famille.jpg",
     "ProductTypeId": 3,
     "ProductBrandId": 7
   }
