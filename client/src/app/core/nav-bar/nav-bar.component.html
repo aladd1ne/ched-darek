@@ -1,103 +1,36 @@
-<!-- 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
-      <img src="/assets/images/logo-dark.png" style="max-height: 70px;" alt="logo" routerLink="/" class="logo">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-      
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" [routerLink]="['/']" routerLinkActive="active"
-            [routerLinkActiveOptions]="{exact:true}">Home</a>
-  
-           
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/shop" routerLinkActive="active">Shop</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/test-error" routerLinkActive="active">Errors</a>
-          </li>
-        </ul>
-
-        <div class="d-flex align-items-center">
-
-          <a routerLink="/basket" class="position-relative">
-              <i class="fa fa-shopping-cart fa-2x mr-5 text-dark"></i>
-              <div *ngIf="(basket$|async) " class="cart-no">{{(basket$ | async).items.length}}</div>
-          </a>
-  
-          
-              <ng-container *ngIf="(currentUser$ | async) == null">
-                  <a routerLink="/account/login" class="btn btn-outline-secondary mr-2">Login</a>
-                  <a routerLink="/account/register" class="btn btn-outline-secondary mr-3">Sign up</a>
-              </ng-container>
-      
-  
-       
-  
-          <ng-container *ngIf="currentUser$ | async ">
-              <div class="dropdown ml-3 mr-5" dropdown>
-                  <a class="dropdown-toggle" style="cursor: pointer;" dropdownToggle>
-                      <strong>Welcome</strong>  {{(currentUser$ | async).displayName}}
-                  
-                  </a>
-  
-                  <div class="dropdown-menu dropdown-menu-right" style="cursor: pointer;" *dropdownMenu>
-                      <a routerLink='/basket' class="dropdown-item d-flex align-items-center py-2">
-                          <i class="fa fa-shopping-cart mr-3"></i> View Basket
-                      </a>
-  
-                      <a routerLink='/orders' class="dropdown-item d-flex align-items-center py-2">
-                          <i class="fa fa-history mr-3"></i> View Orders
-                      </a>
-                      <div class="dropdown-divider"></div>
-                      <a (click)="logout()"  class="dropdown-item d-flex align-items-center py-2">
-                          <i class="fa fa-sign-out mr-3"></i> Logout
-                      </a>
-                  </div>
-              </div>
-             
-          </ng-container>
-  
-      </div>
-      </div>
-    </nav> -->
 
 
-    <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-
-  <!-- Container wrapper -->
+<nav class="navbar navbar-expand-lg navbar-light    fixed-top">
+  
+  
   <div class="container-fluid">
-    <!-- Toggle button -->
+    
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <!-- Collapsible wrapper -->
+    
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-      <!-- Navbar brand -->
+    
       <img src="/assets/images/logo-dark.png" style="max-height: 60px;" alt="logo" routerLink="/" class="logo">  
-      <!-- Left links -->
+     
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link" [routerLink]="['/']" routerLinkActive="active"
-          [routerLinkActiveOptions]="{exact:true}">Home</a>
+          [routerLinkActiveOptions]="{exact:true}"> <span class="link">Home</span> </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/shop" routerLinkActive="active">Shop</a>
+          <a class="nav-link" routerLink="/shop" routerLinkActive="active"><span class="link">Shop</span> </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/test-error" routerLinkActive="active">Errors</a>
+          <a class="nav-link" routerLink="/test-error" routerLinkActive="active"> <span class="link">Errors</span> </a>
         </li>
       </ul>
-      <!-- Left links -->
+      
     </div>
-    <!-- Collapsible wrapper -->
+   
 
-    <!-- Right elements -->
+    
     <div class="d-flex align-items-center">
 
       <a routerLink="/basket" class="position-relative">
@@ -139,10 +72,12 @@
       </ng-container>
 
   </div>
-    <!-- Right elements -->
+  
   </div>
-  <!-- Container wrapper -->
+ 
 </nav>
-<!-- Navbar -->
+ 
+ 
+   
 
  

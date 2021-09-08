@@ -41,6 +41,9 @@
                
               "src/styles.scss",
 
+              "src/assets/css/reponsive.css",
+              
+
               
               
               "src/assets/vendors/bootstrap-select/bootstrap-select.min.css",

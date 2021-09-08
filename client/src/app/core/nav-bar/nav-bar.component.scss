@@ -67,11 +67,26 @@ a{
   
 }
 
+.navbar{
+   background-color: white;
+}
+
 @media screen and (max-width: 1000px) {
     .navbar{
         padding-top: 20px;
-        
+        background-color: rgba(255, 255, 255, 0.89);
+
     }
+
+    .nav-link{
+        font-weight: bold;
+    }
+
+    .logo{
+        width: 70px;
+    }
+
+   
   }
 
  
