@@ -27,16 +27,18 @@
                         (click)="onBrandSelected(brand.id)">
                         {{brand.name}}
                     </li>
-                        </ul><!-- /.list-unstyled product-sidebar__links -->
-                    </div><!-- /.product-sidebar__single -->
-                </div><!-- /.product-sidebar -->
-            </div><!-- /.col-sm-12 col-md-12 col-lg-3 -->
+                        </ul> 
+
+                
+                    </div> 
+                </div> 
+            </div> 
             <div class="col-sm-12 col-md-12 col-lg-9">
                 <div class="product-sorter">
                      <app-paging-header [totalCount]="totalCount" [pageSize]="this.shopParams.pageSize"
                     [pageNumber]="this.shopParams.pageNumber"></app-paging-header>
                     <div class="product-sorter__select">
-                        <select class="custom-select">
+                        <select class="custom-select" (change)="onSortSelected($event.target.value)">
                             <option *ngFor="let sort of sortOption" 
                             [selected]="shopParams.sort === sort.value"
                             [value]="sort.value">

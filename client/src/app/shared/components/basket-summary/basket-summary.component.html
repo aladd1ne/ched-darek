@@ -1,4 +1,4 @@
-<ng-container *ngIf="items.length > 0" >
+<!-- <ng-container *ngIf="items.length > 0" >
     <div class="table-responsive">
         <table class="table table-borderless">
             <thead [class.thead-light]="isBasket || isOrder" class="border-0 py-2">
@@ -63,4 +63,64 @@
         </table>
     </div>
     
+</ng-container> -->
+
+<ng-container *ngIf="items.length > 0" >
+    <section class="cart-page">
+        <div class="container">
+            <div class="table-responsive">
+                <table class="table cart-table">
+                    <thead>
+                        <tr>
+                            <th>Article</th>
+                            <th>Prix</th>
+                            <th>Quantité</th>
+                            <th>Total</th>
+                            <th>Supprimer</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let item of items">
+                            <td>
+                                <div class="p-2">
+                                    <img src="{{item.pictureUrl}}" alt="{{item.productName}}"
+                                        class="img-fluid" style="max-height: 90px;">
+                                    <div class="ml-3 d-inline-block align-middle">
+                                        <h5 class="mb-0">
+                                            <a routerLink="/shop/{{item.id}}"
+                                                class="text-dark">{{item.productName}}</a>
+                                        </h5>
+                                        <span
+                                            *ngIf="item.type"
+                                            class="text-muted font-weight-normal font-italic d-block">Type:
+                                            {{item.type}}</span>
+                                    </div>
+            
+                                </div>
+                            </td>
+                            <td>{{item.price}},TND</td>
+                            <td>
+                                <div class="quantity-box" [class.justify-content-center]="!isBasket">
+                                    <button  *ngIf="isBasket" (click)="decrementItemQuantity(item)" type="button" class="sub">-</button>
+                                    <input type="number" id="2" value="{{item.quantity}}" />
+                                    <button  *ngIf="isBasket" (click)="incrementItemQuantity(item)" type="button" class="add">+</button>
+                                </div>
+                            </td>
+                            <td>
+                                {{item.price * item.quantity}}<span>,TND</span>
+                            </td>
+                            <td>
+                                <i *ngIf="isBasket" (click)="removeBasketItem(item)" class="organik-icon-close remove-icon" style="cursor: pointer;"></i>
+                            </td>
+                        </tr>
+                    
+                    </tbody>
+    
+                </table><!-- /.table -->
+            </div><!-- /.table-responsive -->
+         
+        </div><!-- /.container -->
+    </section><!-- /.cart-page -->
+
 </ng-container>
+
