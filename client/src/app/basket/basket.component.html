@@ -1,6 +1,16 @@
 <div class="container mt-2">
     <div *ngIf="(basket$ | async) === null">
-        <p>There are no items in your basket</p>
+
+
+        <div class="jumbotron jumbotron-fluid" style="margin-top: 30px; text-align: center;">
+            <div class="container">
+              
+              <h1 class="display-4">القفة <span><i class="fas fa-shopping-basket fa-sm"></i></span> فارغة</h1>
+              <p class="lead">Il n'y a pas d'articles dans votre panier</p>
+            </div>
+          </div>
+         
+        
     </div>
 
     <div *ngIf="basket$ | async">
@@ -18,14 +28,16 @@
                 </div>
                 
                 <div class="row">
-                    <div class="col-6 offset-6">
+
+                    <div class="col-md-6 col-sm-12"></div>
+                    <div class="col-md-6 col-sm-12">
                         <app-order-totals
                             *ngIf="(basketTotals$ | async)"
                             [shippingPrice]="(basketTotals$ | async).shipping"
                             [subtotal]="(basketTotals$ | async).subtotal"
                             [total]="(basketTotals$ | async).total"
                         ></app-order-totals>
-                        <a routerLink="/checkout" class="btn btn-outline-primary py-2 btn-block">
+                        <a routerLink="/checkout" class="btn   py-2 btn-block">
                             Passer à la caisse
                         </a>
                     </div>

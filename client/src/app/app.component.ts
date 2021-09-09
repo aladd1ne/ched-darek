@@ -12,7 +12,7 @@ import { BasketService } from './basket/basket.service';
 export class AppComponent implements OnInit {
 
 
-  title = 'ChedDarek';
+  title = 'Ched-Darek';
 
 
   constructor(private basketService: BasketService, private accountService: AccountService) { }

@@ -1,12 +1,12 @@
 <div class="mt-4" [formGroup]="checkoutForm">
     <div class="d-flex justify-content-between align-items-center">
-        <h4>Shipping address</h4>
+        <h4 class="ship">Shipping address</h4>
         <button 
             (click)="saveUserAddress()" 
             [disabled]="!checkoutForm.get('addressForm').valid || 
                 !checkoutForm.get('addressForm').dirty"
-            class="btn btn-outline-success mb-3">
-            Save as default address
+            class="btn btn-outline-success mb-3 btn-save">
+            Modifer & Enregistrer 
         </button>
     </div>
     <div class="row" formGroupName="addressForm">
@@ -32,10 +32,10 @@
 </div>
 
 <div class="float-none d-flex justify-content-between flex-column flex-lg-row mb-5">
-    <button class="btn btn-outline-primary" routerLink="/basket">
-        <i class="fa fa-angle-left"></i> Back to Basket
+    <button class="btn btn-outline-primary back-btn" routerLink="/basket">
+        <i class="fa fa-angle-left"></i> Retour au panier
     </button>
     <button [disabled]="checkoutForm.get('addressForm').invalid" class="btn btn-primary" cdkStepperNext>
-        Go to Delivery <i class="fa fa-angle-right"></i> 
+        Aller à la livraison <i class="fa fa-angle-right"></i> 
     </button>
 </div>

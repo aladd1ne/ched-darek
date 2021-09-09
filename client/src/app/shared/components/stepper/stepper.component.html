@@ -6,8 +6,9 @@
                 <button 
                 (click)="onClick(i)"
                 [class.active]="selectedIndex === i"
-                class="nav-link py-3 text-uppercase font-weight-bold btn-block">
-                {{step.label}} :{{step.completed}}
+                class="nav-link  text-uppercase font-weight-bold btn-block">
+                {{step.label}} 
+                <!-- :{{step.completed}} -->
                 </button>
         </li>
     </ul>
